@@ -3,8 +3,8 @@
 
 module Api
   module V1
-    class Category < ApplicationRecord
-      has_many :products
+    class Product < ApplicationRecord
+      belongs_to :category
     end
   end
 end
