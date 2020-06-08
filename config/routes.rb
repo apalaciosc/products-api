@@ -7,6 +7,8 @@ Rails.application.routes.draw do
         post 'sign_up', to: 'registrations#create'
         post 'sign_in', to: 'sessions#create'
       end
+      resources :categories
+      resources :products
     end
   end
 end
